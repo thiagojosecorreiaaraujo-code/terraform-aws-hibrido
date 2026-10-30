@@ -1,0 +1,20 @@
+# Copie para terraform.tfvars e ajuste.
+
+regiao  = "sa-east-1"
+projeto = "hibrido"
+
+vpc_cidr = "10.10.0.0/16"
+
+# Escritórios e Filiais — IP público do firewall e redes internas
+escritorios_ip_publico = "203.0.113.10"
+escritorios_cidrs      = ["192.168.0.0/16"]
+
+# Data Center Corporativo — IP público do firewall e redes internas
+datacenter_ip_publico = "198.51.100.20"
+datacenter_cidrs      = ["172.16.0.0/16"]
+
+# Usuários remotos (Client VPN SSL)
+client_vpn_cidr = "10.250.0.0/22"
+
+# Storage Gateway: deixe vazio até a VM estar no ar no data center
+storage_gateway_ip = ""
